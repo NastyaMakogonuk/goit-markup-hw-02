@@ -197,12 +197,9 @@ ul {
 }
 
 .address-link-light:hover {
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
-
   color: var(--hover-accent-color);
 }
 
 .address-link-light {
-  color: var(--secondary-light-color);
+  color: var(--primary-white-color);
 }
