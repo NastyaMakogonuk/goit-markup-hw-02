@@ -202,3 +202,7 @@ ul {
 
   color: var(--primary-white-color);
 }
+
+.address-link-light {
+  color: var(--secondary-light-color);
+}
