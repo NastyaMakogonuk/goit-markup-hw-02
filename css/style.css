@@ -168,10 +168,6 @@ ul {
 
 }
 .cards-title {
-  font-size: 18px;
-  line-height: calc(36 / 18);
-  letter-spacing: 0.06em;
-
   color: var(--title-text-color);
 }
 
@@ -200,7 +196,7 @@ ul {
   color: var(--secondary-light-color);
 }
 
-.address-link-light {
+.address-link-light:hover {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
 
