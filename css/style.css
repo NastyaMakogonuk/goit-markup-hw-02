@@ -200,7 +200,7 @@ ul {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
 
-  color: var(--primary-white-color);
+  color: var(--hover-accent-color);
 }
 
 .address-link-light {
