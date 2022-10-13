@@ -44,7 +44,7 @@ body {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-
+  
   color: var(--title-text-color);
 }
 
@@ -60,9 +60,9 @@ body {
 
 .contacts-link {
   font-weight: 500;
-
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  
 
   color: var(--primary-text-color);
 }
@@ -77,6 +77,8 @@ body {
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
+
 
   color: var(--primary-white-color);
 }
