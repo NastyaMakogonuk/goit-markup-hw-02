@@ -485,6 +485,7 @@ color: var(--title-text-color);
 
 .cards-border {
   border: 1px solid #EEEEEE;
+  padding-bottom: 20px;
 }
 img {
   display: block;
