@@ -473,7 +473,6 @@ color: var(--title-text-color);
   line-height: 30px;
   letter-spacing: 0.03em;
   margin-left: 24px;
-
   color: var(--primary-text-color);
 }
 
@@ -487,6 +486,7 @@ color: var(--title-text-color);
   border: 1px solid #EEEEEE;
   padding-bottom: 20px;
 }
+
 img {
   display: block;
   max-width: 100%;
