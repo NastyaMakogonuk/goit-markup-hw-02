@@ -64,11 +64,6 @@ img {
 	vertical-align: top;
 }
 
-img, svg {
-	max-width: 100%;
-	height: auto;
-}
-
 address {
   font-style: normal;
 }
@@ -125,6 +120,7 @@ header .container {
   display: flex;
   margin-left: 93px;
 }
+
 .contacts-list {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -138,7 +134,8 @@ header .container {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
 }
 
@@ -174,7 +171,7 @@ header .container {
 
 
 .contacts-list li + li {
-  margin-left: 50px;
+  margin-right: 0px;
 }
 
 
@@ -316,7 +313,6 @@ padding-bottom: 94px;
 
 .title-work {
   margin-bottom: 94px;
-  margin-top: 94px;
 }
 
 .team {
@@ -460,6 +456,8 @@ padding-bottom: 94px;
 
 img {
   display: block;
+  max-width: 100%;
+	height: auto;
 }
 
 .footer {
