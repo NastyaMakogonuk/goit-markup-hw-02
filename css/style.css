@@ -122,9 +122,6 @@ header .container {
 }
 
 .contacts-list {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
   display: flex;
   margin-left: auto;
 }
@@ -312,7 +309,7 @@ padding-bottom: 94px;
 }
 
 .title-work {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .team {
