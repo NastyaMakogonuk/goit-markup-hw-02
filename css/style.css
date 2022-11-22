@@ -166,6 +166,8 @@ header .container {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
 }
 
 .svgmail {
@@ -185,8 +187,7 @@ header .container {
 }
 
 .contacts-link {
-  display: flex;
-  align-items: center;
+  
 }
 
 .contacts-list li + li {
