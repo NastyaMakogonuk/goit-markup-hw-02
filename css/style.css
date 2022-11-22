@@ -11,25 +11,25 @@
 }
 
 * {
-	padding: 0px;
-	margin: 0px;
-	border: none;
+    padding: 0px;
+    margin: 0px;
+    border: none;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 :focus,
 :active {
-	/*outline: none;*/
+    /*outline: none;*/
 }
 
 a:focus,
 a:active {
-	/* outline: none;*/
+    /* outline: none;*/
 }
 
 /* Links */
@@ -48,20 +48,20 @@ a:hover  {
 /* Common */
 
 aside, nav, footer, header, section, main {
-	display: block;
+    display: block;
 }
 
 h1, h2, h3, h4, h5, h6, p {
     font-size: inherit;
-	font-weight: inherit;
+    font-weight: inherit;
 }
 
 ul, ul li {
-	list-style: none;
+    list-style: none;
 }
 
 img {
-	vertical-align: top;
+    vertical-align: top;
 }
 
 address {
@@ -97,8 +97,8 @@ body {
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   text-decoration: none;
-
   color: var(--accent-color);
+  
 }
 
 .logo-dark {
@@ -150,6 +150,10 @@ header .container {
 .contacts-link:hover,
 .contacts-link:focus,
 .nav-link.current,
+.svgmail:hover, 
+.svgmail:focus, 
+.svgphone:hover,
+.svgphone:focus,
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
@@ -159,13 +163,31 @@ header .container {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  
   padding-top: 32px;
   padding-bottom: 32px;
-
   color: var(--primary-text-color);
 }
 
+.svgmail {
+  fill: currentColor;
+  display: flex;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.svgphone {
+  fill: currentColor;
+  display: flex;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
+}
 
 .contacts-list li + li {
   margin-right: 0px;
@@ -177,7 +199,7 @@ header .container {
   background-color: var(--secondary-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
-
+  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(/images/heropicture.jpg);
 }
 
 .hero-title {
@@ -218,6 +240,18 @@ header .container {
   background-color: var(--hover-accent-color);
 }
 
+.iconfeatures {
+  background: #F5F4FA;
+  border-radius: 4px;
+  height: 120px;
+  width: 270px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .features {
 padding-top: 94px;
 padding-bottom: 94px;
@@ -246,10 +280,7 @@ padding-bottom: 94px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
 
 .title-features {
@@ -315,6 +346,7 @@ padding-bottom: 94px;
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-bottom: 94px;
   background-color: var(--additional-background-color);
 }
 
@@ -353,11 +385,27 @@ padding-bottom: 94px;
   font-size: 16px;
   line-height: calc(19 / 16);
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 
 .team-description {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.net-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.net-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
 }
 
 .button-filter {
@@ -370,6 +418,119 @@ padding-bottom: 94px;
 }
 
 
+.net-icon {
+  fill: #AFB1B8;
+}
+
+.net-link:hover {
+  background-color: #2196f3;
+}
+
+.net-link:hover .net-icon {
+  fill: var(--primary-white-color);
+}
+
+
+
+
+/* .svgsocialnetworks:nth-child(4n) {
+  margin-right: 0px;
+} */
+
+.clients {
+margin-bottom: 94px;
+}
+
+.clientstitle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+}
+
+.clientslogo {
+  display: flex;
+}
+
+.clientslogoicon:nth-child(6n) {
+  margin-right: 0px;
+}
+
+.clientslogoicon {
+  fill: #afb1b8;
+} 
+
+.clientslogosvg {
+fill: #AFB1B8;
+}
+
+
+.clientssvg {
+  border: 1px solid #AFB1B8;
+  width: 170px;
+  height: 92px;
+  margin-right: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+}
+
+.clientssvg:hover .clientslogosvg {
+  fill: var(--hover-accent-color);
+}
+
+.clientssvg:hover {
+  border: 1px solid #2196f3;
+}
+
+.invitelist {
+  justify-content: center;
+  text-align: center;
+}
+
+.invite {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.addressposition {
+  display: flex; 
+  align-items: baseline; 
+}
+.net-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--bgc-footer-network);
+  color: var(--icons-hover-colour);
+  border-radius: 50%;
+  transition: background-color 250ms var(--timing-function);
+}
+.net-invite {
+  gap: 10px;
+  display: flex;
+}
+
+.asktoinvite {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
 .filter-button {
   border-radius: 4px;
   border: 0;
@@ -385,8 +546,6 @@ padding-bottom: 94px;
   margin: 0 auto;
   background: var(--additional-background-color);
   color: var(--title-text-color);
-
-  cursor: pointer;
 }
 
 .filter-button.current,
@@ -454,7 +613,7 @@ padding-bottom: 94px;
 img {
   display: block;
   max-width: 100%;
-	height: auto;
+    height: auto;
 }
 
 .footer {
@@ -472,8 +631,13 @@ img {
   color: var(--primary-white-color);
 }
 
+.addressblock {
+  margin-right: ;
+}
+
 .address {
   font-style: normal;
+  margin-right: 70px;
 }
 
 .address-footer {
@@ -497,4 +661,32 @@ img {
 
 .address-link-light {
   color: var(--primary-white-color);
+}
+
+.net-invite {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.net-link-footer {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.net-icon-footer {
+  fill: var(--additional-background-color);
+}
+
+.net-link-footer:hover {
+  background-color: #2196f3;
+}
+
+.net-link-footer:hover .net-icon-footer {
+  fill: var(--primary-white-color);
 }
