@@ -134,7 +134,10 @@ header .container {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--title-text-color);
+  position: relative;
 }
+
+
 
 .li {
   margin-right: 50px;
@@ -157,6 +160,18 @@ header .container {
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
+}
+
+.current-page::after {
+  position: absolute;
+  background-color: #2196f3;
+  display: inline-block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -2px;
+  border-radius: 2px;
 }
 
 .contacts-link {
@@ -311,11 +326,36 @@ padding-bottom: 94px;
 
 .picture-title {
   display: flex;
+  
 }
 
 .picture-title-li {
   margin-right: 30px;
+  position: relative;
 }
+
+.blockdescriptionwork {
+  position: absolute;
+  bottom: 0px;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.descriptionwork {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  vertical-align: top;
+  color: var(--primary-white-color);
+
+}
+
+
 
 .picture-title-li:nth-child(3n) {
   margin-right: 0px;
@@ -346,7 +386,6 @@ padding-bottom: 94px;
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  margin-bottom: 94px;
   background-color: var(--additional-background-color);
 }
 
@@ -433,13 +472,9 @@ padding-bottom: 94px;
 
 
 
-
-/* .svgsocialnetworks:nth-child(4n) {
-  margin-right: 0px;
-} */
-
 .clients {
-margin-bottom: 94px;
+padding-top: 94px;
+padding-bottom: 94px;
 }
 
 .clientstitle {
@@ -472,22 +507,32 @@ fill: #AFB1B8;
 
 
 .clientssvg {
-  border: 1px solid #AFB1B8;
-  width: 170px;
-  height: 92px;
   margin-right: 30px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+}
+  
+.clientsvglink {
+  border: 1px solid #AFB1B8;
+   width: 170px; 
+   height: 92px; 
+   justify-content: center; 
+   align-items: center;
+   display: flex; 
   border-radius: 5px;
+
+}
+
+.clientssvg:nth-child(6n) {
+  margin-right: 0px;
 }
 
 .clientssvg:hover .clientslogosvg {
   fill: var(--hover-accent-color);
 }
 
-.clientssvg:hover {
+.clientsvglink:hover {
   border: 1px solid #2196f3;
+  border-radius: 5px;
+  fill: var(--hover-accent-color);
 }
 
 .invitelist {
@@ -496,7 +541,6 @@ fill: #AFB1B8;
 }
 
 .invite {
-display: flex;
 justify-content: center;
 align-items: center;
 }
@@ -542,7 +586,6 @@ align-items: center;
   line-height: 1.87;
   letter-spacing: 0.06em;
   padding: 6px 25px;
-  cursor: pointer;
   display: block;
   text-align: center;
   margin: 0 auto;
@@ -614,6 +657,55 @@ align-items: center;
   color: var(--primary-text-color);
 }
 
+.overflow-cards{
+  position: relative;
+  overflow: hidden;
+
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  
+  transform: translateY(101%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+.overlay .text-overlay {
+  padding: 60px 24px;
+  align-content: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: inherit;
+  color: var(--primary-white-color);
+}
+
+.overflow-cards{
+  position: relative;
+  overflow: hidden;
+}
+
+
+.overflow-cards:hover .overlay,
+.overflow-cards:focus .overlay  {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cards-li:hover .overlay,
+.cards-li:focus .overlay  {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .cards-text {
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -632,6 +724,18 @@ align-items: center;
 }
 .cards-border-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.cards-thumb {
+position: relative;
+}
+
+.cards-thumb::before {
+  display: inline-block;
+  content: "";
+  width: 50%;
+  height: 50%;
+  background-color: #2196f3;
 }
 
 img {
@@ -661,7 +765,6 @@ img {
 
 .address {
   font-style: normal;
-  margin-right: 70px;
 }
 
 .address-footer {
@@ -690,22 +793,23 @@ img {
 
 .net-invite {
   display: flex;
-  justify-content: center;
   gap: 10px;
 }
 
 .net-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.1);;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color 250ms var(--timing-function);
+  
 }
 
 .net-icon-footer {
-  fill: var(--additional-background-color);
+  fill: var(--primary-white-color);
 }
 
 .net-link-footer:hover,
