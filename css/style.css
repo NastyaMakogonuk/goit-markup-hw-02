@@ -676,8 +676,8 @@ align-items: center;
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-
 }
+
 .overlay .text-overlay {
   padding: 60px 24px;
   align-content: center;
@@ -817,7 +817,3 @@ img {
   background-color: #2196f3;
 }
 
-.net-link-footer:hover .net-icon-footer,
-.net-link-footer:focus .net-icon-footer {
-  fill: var(--primary-white-color);
-}
