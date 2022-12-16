@@ -22,15 +22,14 @@
     box-sizing: border-box;
 }
 
-:focus,
+/* :focus,
 :active {
-    /*outline: none;*/
-}
+    /* outline: none;
+} */
 
-a:focus,
+/* a:focus,
 a:active {
     /* outline: none;*/
-}
 
 /* Links */
 
@@ -217,9 +216,9 @@ header .container {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-link {
+/* .contacts-link {
   
-}
+} */
 
 .contacts-list li + li {
   margin-right: 0px;
@@ -945,7 +944,7 @@ img {
 }
 
 .modal-close-button {
-  radius: 15px;
+  
   position: fixed;
   right: 0;
   background-color: #ECECEC;
