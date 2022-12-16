@@ -43,7 +43,7 @@
     <section class="hero">
         <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero-button" type="button">Замовити послугу</button>
+        <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
         </div>
     </section>
     <section class="features">
@@ -308,8 +308,37 @@
                 </a></li>
         </ul>
     </div>
+    <div class="invite-footer">
+        <p class="subscribe">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+    <input class='input-mail-footer' type="email" placeholder="E-mail" name="email" />
+    <button class="button-invite">Підписатися</button>
+</div>
 </div>
 </div>
 </footer>
+<div class="backdrop" data-modal>
+<div class="modal">
+    <button class="modal-close-button" type="button" data-modal-close> X
+            <!-- <svg class="cross" width="11" height="11"> 
+                <use href="./images/cross.svg"></use> 
+            </svg> -->
+    </button>
+    <div class="sdad" role="group" aria-labelledby="contact-details-head">
+        <p class='contact-details' id="contact-details-head">Поки сюди не дивіться)</p>
+    <form name="signup_form" autocomplete="on" novalidate>
+        <input type="text" name="username" />
+        <label>
+            Телефон
+            <input type="tel" name="phone_number" />
+        </label>
+        <button class='button-submit' type="submit">Submit</button>
+        <p class="mail-form">Пошта:</p>
+        <label class="label">
+          <input type="email" name="email" />
+        </label>
+        </div>
+</div>
+</div>
+    <script src="./modal.js"></script>
 </body>
 </html>
